@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* START HEADER SECTION ----------------------------------------*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 20;
+}
+.easybank-icon-container,
+.easybank-menu-container,
+.easybank-header-button-container {
+  width: 30%;
+  text-align: center;
+  max-height: 52px;
+}
+.easybank-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.easybank-menu-category {
+  align-self: flex-end;
+  height: 100%;
+}
+.easybank-menu-link {
+  display: inline-block;
+  line-height: 52px;
+}
+.easybank-request-button {
+  width: 150px;
+  height: 52px;
+}
+/* END HEADER SECTION ------------------------------------------*/
+
+/* START COTENT SECTION ----------------------------------------*/
+.content {
+  max-width: 1440px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* START MAIN SECTION ------------------------------------------*/
+main {
+  width: 100%;
+  padding-top: 80px;
+  margin: 0px auto;
+}
+.easybank-hero-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 657px;
+}
+.easybank-hero-info-container {
+  width: 450px;
+  margin-top: 180px;
+  margin-left: 10%;
+}
+.easybank-hero-title,
+.easybank-hero-desc {
+  margin-bottom: 40px;
+}
+.easybank-hero-image-container {
+  position: relative;
+}
+.easybank-hero-image {
+  position: absolute;
+  top: -118px;
+  left: 127px;
+}
+/* END MAIN SECTION --------------------------------------------*/
+
+/* START FEATURE SECTION ---------------------------------------*/
+.easybank-feature-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 112px 10%;
+}
+.easybank-subtitle {
+  margin-bottom: 40px;
+}
+.easybank-subtitle-info {
+  width: 50%;
+  margin-bottom: 77px;
+}
+.easybank-feature-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+.easybank-card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 35px;
+}
+.easybank-card-container img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 10px;
+}
+/* END FEATURE SECTION ---------------------------------------*/
+
+/* START ARTICLE SECTION -------------------------------------*/
+.easybank-article-container {
+  padding: 95px 10%;
+}
+.easybank-article-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.easybank-article-box {
+  width: 24%;
+}
+.easybank-article-box img {
+  width: 100%;
+  max-height: 50%;
+  margin-bottom: 30px;
+}
+.easybank-article-author,
+.easybank-article-title {
+  margin-bottom: 15px;
+}
+.easybank-article-desc {
+  margin-bottom: 25px;
+}
+/* END ARTICLE SECTION ---------------------------------------*/
+
+/* END COTENT SECTION ----------------------------------------*/
+
+/* START FOOTER SECTION ---------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 50px 10%;
+}
+.easybank-footer-col {
+  width: 30%;
+}
+.col-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.easybank-footer-logo {
+  width: 140px;
+  height: 21px;
+}
+.easybank-social-icons-container img {
+  margin-right: 10px;
+}
+.col-center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.easybank-footer-menu li {
+  margin-bottom: 20px;
+}
+.col-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+/* END FOOTER SECTION -----------------------------------------*/
