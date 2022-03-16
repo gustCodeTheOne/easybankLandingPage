@@ -122,7 +122,7 @@ main {
 }
 
 .easybank-subtitle-info {
-  width: 50%;
+  width: 60%;
   margin-bottom: 77px;
 }
 
@@ -157,18 +157,28 @@ main {
 .easybank-article-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .easybank-article-box {
-  width: 24%;
+  width: 248px;
+  height: 382px;
+  border-radius: 6px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  overflow: hidden;
 }
 
-.easybank-article-box img {
+.easybank-article-image-wrapper {
   width: 100%;
-  max-height: 172px;
+  height: 50%;
   margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.easybank-article-image-wrapper img {
+  height: 100%;
 }
 
 .easybank-article-author,
@@ -207,7 +217,7 @@ footer {
   height: 21px;
 }
 
-.easybank-social-icons-container img {
+.easybank-social-icons-container svg {
   margin-right: 10px;
 }
 
@@ -219,7 +229,7 @@ footer {
 }
 
 .easybank-footer-menu li {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .col-right {
