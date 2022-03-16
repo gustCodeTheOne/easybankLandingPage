@@ -51,7 +51,7 @@ main {
   background-color: #fafafa;
   background-image: url(../media/images/bg-intro-desktop.svg);
   background-repeat: no-repeat;
-  background-position: 680% 60%;
+  background-position: 520px -170px;
 }
 .easybank-hero-title {
   font-size: 58px;
@@ -165,3 +165,45 @@ footer {
   color: #9698a6;
 }
 /* END FOOTER SECTION ----------------------------------------*/
+
+@media (max-width: 1050px) {
+  .easybank-menu-container {
+    background-color: #fff;
+  }
+  .easybank-menu-link {
+    color: #2d314d;
+  }
+
+  main {
+    background-image: url(../media/images/bg-intro-mobile.svg);
+    background-position: top right;
+  }
+}
+
+@media (max-width: 800px) {
+  .easybank-card-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  /* HERO SECTION */
+  .easybank-hero-title {
+    font-size: 38px;
+  }
+  .easybank-hero-desc {
+    font-size: 14px;
+  }
+  /* FEATURE SECTION */
+  .easybank-subtitle {
+    font-size: 32px;
+  }
+  .easybank-subtitle-info {
+    font-size: 14px;
+  }
+
+  /* ARTICLE SECTION */
+  .easybank-article-box {
+    width: 100%;
+  }
+}
