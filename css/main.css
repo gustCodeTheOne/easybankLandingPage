@@ -17,11 +17,16 @@ header {
 }
 
 .easybank-icon-container,
-.easybank-menu-container,
 .easybank-header-button-container {
   width: 30%;
   text-align: center;
   max-height: 52px;
+}
+
+.easybank-menu-container {
+  width: 30%;
+  text-align: center;
+  height: 100%;
 }
 
 .easybank-menu {
@@ -40,12 +45,24 @@ header {
 
 .easybank-menu-link {
   display: inline-block;
-  line-height: 52px;
+  position: relative;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.easybank-menu-link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 4px;
 }
 
 .easybank-request-button {
-  width: 150px;
-  height: 52px;
+  width: 160px;
+  height: 45px;
 }
 
 /* END HEADER SECTION ------------------------------------------*/

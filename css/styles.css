@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+}
+/* START HEADER SECTION --------------------------------------*/
+header {
+  background-color: #fff;
+}
+.easybank-menu {
+  list-style-type: none;
+}
+.easybank-menu-link {
+  color: #9698a6;
+  text-decoration: none;
+  transition: color 300ms ease-in-out;
+}
+.easybank-menu-link::before {
+  background: #31d35c;
+  background: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
+  transform: translateX(-100%);
+  transition: transform 300ms ease-in-out;
+}
+.easybank-menu-link:hover {
+  cursor: pointer;
+  color: #2d314d;
+}
+.easybank-menu-link:hover::before {
+  transform: translateX(0%);
+}
+.easybank-request-button {
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 26px;
+  background: #31d35c;
+  background: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+.easybank-request-button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* END HEADER SECTION ----------------------------------------*/
+
+/* START HERO SECTION ----------------------------------------*/
+main {
+  background-image: url(../media/images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 680% 60%;
+}
+.easybank-hero-title {
+  font-size: 58px;
+  font-weight: 400;
+  color: #2d314d;
+}
+.easybank-hero-desc {
+  color: #9698a6;
+  line-height: 1.5;
+}
+/* END HERO SECTION ------------------------------------------*/
