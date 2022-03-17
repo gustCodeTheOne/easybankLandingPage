@@ -168,6 +168,15 @@ footer {
 
 @media (max-width: 1050px) {
   .easybank-menu-container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    transition: max-height 300ms ease-in-out;
+  }
+  .easybank-menu {
     background-color: #fff;
   }
   .easybank-menu-link {

@@ -21,9 +21,11 @@ header {
   max-height: 52px;
 }
 .easybank-menu-container {
+  display: block !important;
   width: 30%;
   text-align: center;
   height: 100%;
+  max-height: 80px;
 }
 .easybank-menu {
   display: flex;
@@ -56,8 +58,7 @@ header {
   width: 160px;
   height: 45px;
 }
-.openMenu,
-.closeMenu {
+.openCloseMenu {
   display: none;
 }
 /* END HEADER SECTION ------------------------------------------*/
@@ -221,29 +222,39 @@ footer {
   }
   .easybank-icon-container {
     width: 20%;
+    margin-left: 15px;
   }
   .easybank-menu-container {
     position: absolute;
-    top: 100px;
-    width: 80%;
-    height: auto;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
     max-height: 0px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 5px;
     overflow: hidden;
     z-index: 40;
-    transition: max-height 300ms ease-in-out;
+  }
+  .menuDisplayed {
+    height: 100vh;
+    max-height: 600px !important; /*265px*/
   }
   .easybank-menu {
     flex-direction: column;
+    width: 80% !important;
+    max-height: 265px;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 5px;
   }
   .easybank-menu,
   .easybank-menu-category,
   .easybank-menu-link {
     width: 100%;
+  }
+  .easybank-menu-category{
+    overflow: hidden;
   }
   .easybank-menu-link {
     line-height: 45px;
@@ -251,9 +262,12 @@ footer {
   .easybank-header-button-container {
     display: none;
   }
-  .openMenu {
+  .openCloseMenu {
     display: block;
     margin-right: 3%;
+  }
+  .openCloseMenu:hover {
+    cursor: pointer;
   }
 
   /* HERO SECTION */
@@ -366,5 +380,4 @@ footer {
   }
 
   /* HERO SECTION */
-
 }
