@@ -5,8 +5,18 @@ body {
   font-size: 18px;
 }
 /* START HEADER SECTION --------------------------------------*/
+@keyframes headerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 header {
   background-color: #fff;
+  transition: opacity 1500ms ease-in-out;
+  animation: headerAnimation 1500ms ease-in-out;
 }
 .easybank-menu {
   list-style-type: none;
@@ -53,14 +63,42 @@ main {
   background-repeat: no-repeat;
   background-position: 520px -170px;
 }
+@keyframes heroInfoAnimation {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes heroImageAnimation {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
 .easybank-hero-title {
   font-size: 58px;
   font-weight: 400;
   color: #2d314d;
+  transform: translateX(0%);
+  animation: heroInfoAnimation 1500ms ease-in-out;
 }
 .easybank-hero-desc {
   color: #9698a6;
   line-height: 1.5;
+  transform: translateX(0%);
+  animation: heroInfoAnimation 1500ms ease-in-out;
+}
+.easybank-hero-info-container .easybank-request-button {
+  transform: translateX(0%);
+  animation: heroInfoAnimation 1500ms ease-in-out;
+}
+.easybank-hero-image {
+  transform: translateY(0%);
+  animation: heroImageAnimation 1600ms ease-in-out;
 }
 /* END HERO SECTION ------------------------------------------*/
 
@@ -73,10 +111,20 @@ main {
   font-weight: 300;
   color: #2d314d;
 }
+.easybank-subtitle,
+.easybank-subtitle-info {
+  transition: transform 1500ms ease-in-out;
+  transform: translateX(-200%);
+}
 .easybank-subtitle-info,
 .easybank-card-desc {
   color: #9698a6;
   line-height: 1.5;
+}
+.easybank-card-container {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: transform 1500ms ease-in-out 100ms, opacity 1500ms ease-in-out;
 }
 .easybank-card-title {
   font-size: 22px;
@@ -86,6 +134,9 @@ main {
 .easybank-card-desc {
   font-size: 16px;
 }
+.info-feature-active {
+  transform: translateX(0%);
+}
 /* END FEATURE SECTION ---------------------------------------*/
 
 /* START ARTICLES SECTION ------------------------------------*/
@@ -94,6 +145,13 @@ main {
 }
 .easybank-article-box {
   background-color: #fff;
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: transform 1500ms ease-in-out 100ms, opacity 1500ms ease-in-out;
+}
+.info-feature-card-active {
+  opacity: 1;
+  transform: translateX(0%);
 }
 .easybank-article-image-wrapper img {
   opacity: 1;
