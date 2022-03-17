@@ -1,4 +1,4 @@
-Easybank landing page
+# Easybank landing page
 
 This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. In this case I added some animations that are activate by the scroll event when the elements reach a trigger point of 100 in the window. 
 
